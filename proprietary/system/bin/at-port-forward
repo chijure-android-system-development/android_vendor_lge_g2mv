@@ -1,0 +1,8 @@
+#!/system/bin/sh
+#
+# Copyright (c) 2013, NVIDIA CORPORATION.  All rights reserved.
+#
+
+AT_PORT=`getprop ro.ril.devicename`
+#/system/bin/ttyfwd -d /dev/ttyGS0 -d $AT_PORT
+/system/bin/ttyfwd -d /dev/ttyGS1 -d /dev/ttySHM11

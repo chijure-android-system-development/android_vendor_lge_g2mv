@@ -1,0 +1,1 @@
+TRUE,/dev/ttyHS3,230400

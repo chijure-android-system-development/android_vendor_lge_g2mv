@@ -1,0 +1,7 @@
+#!/system/bin/sh
+#
+# Copyright (c) 2013, NVIDIA CORPORATION.  All rights reserved.
+#
+
+/system/bin/ttyfwd -d /dev/ttyGS0 -d /dev/log_modem
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<glgps xmlns="http://www.glpals.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.glpals.com/ glconfig.xsd" >
+  <!--HAL Confguration  -->
+  <hal 
+       PortName="/dev/ttyHS1"
+       BaudRate="921600"
+       LogEnabled="false"
+       Log="JAVA"
+       LogDirectory="/storage/sdcard0/gps"
+       GpioNStdbyPath="/sys/class/gpio/gpio63/value"
+       GpioDelayMs="250"
+       NvStorageDir="/data/gps/"
+       GpslogdPipePath="/data/gps/.gpslogd.pipe"
+       SuplEnable="true"
+       SuplMsbCapable="true"
+       SuplMsaCapable="true"
+       SuplEcidCapable="false"
+       SuplUseApn="false"
+
+       SuplTlsCertPath="/system/etc/gps/lge.cer"
+       ReAidingIntervalSec="1200"
+       SuplUT1Seconds="20"
+       SuplUT2Seconds="20"
+       SuplUT3Seconds="20"
+       SuplMinorVersion="0"
+       SuplVersion="2"
+       SuplTlsEnable="true"     
+       SuplSslMethod="SSLv23"
+	   SuplHmacHash="auto" 
+       	   
+       LbsEnable="true"
+       LbsServer="lgelbs.glpals.com"
+       LbsPort="7275"
+       LtoFileName="lto2.dat"
+       LtoDir="/data/gps/"
+       LbsSyncLtoThresholdDays="3"
+       LbsWlanEnable="false"
+       HttpSyncLto="true"
+       LbsCellEnable="false"
+
+       IgnoreJniTime="true"
+       IgnoreJniLocation="true"
+  />
+
+  <gll 
+       LogPriMask="LOG_INFO"
+       LogFacMask="LOG_GLLIO | LOG_GLLAPI | LOG_NMEA | LOG_RAWDATA"       
+       FrqPlan="FRQ_PLAN_26MHZ_2PPM_38_4MHZ_300PPB"
+       RfType="GL_RF_4752_BRCM_EXT_LNA"
+  />
+
+<!-- Periodic Position Fix using default settings -->
+<job id="Periodic">
+    <task>
+    	<req_pos/>
+    </task>
+</job>
+
+
+
+<!-- Periodic Position Fix using default settings -->
+<job id="ShortPeriodic">	
+    <task>
+    	<req_pos ValidFix="30"/>
+    </task>
+</job>
+
+
+<!-- Periodic Position Fix using default settings -->
+<job id="TestPeriodic">
+    <task>
+    	<req_pos ValidFix="180"/>
+    </task>
+</job>
+
+</glgps>

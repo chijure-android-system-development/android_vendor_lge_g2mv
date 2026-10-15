@@ -1,0 +1,3 @@
+*.apk.unsigned
+*~
+.DS_Store
