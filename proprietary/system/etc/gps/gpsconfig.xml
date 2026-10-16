@@ -24,7 +24,7 @@
        SuplUT3Seconds="20"
        SuplMinorVersion="0"
        SuplVersion="2"
-       SuplTlsEnable="true"     
+       SuplTlsEnable="false"     
        SuplSslMethod="SSLv23"
 	   SuplHmacHash="auto" 
        	   
