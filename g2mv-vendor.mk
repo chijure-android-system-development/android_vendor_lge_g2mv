@@ -31,6 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g2mv/proprietary/system/bin/sensord:system/bin/sensord \
     vendor/lge/g2mv/proprietary/system/etc/audioConfig_qvoice_icera_pc400.xml:system/etc/audioConfig_qvoice_icera_pc400.xml \
     vendor/lge/g2mv/proprietary/system/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/lge/g2mv/proprietary/system/etc/enctune.conf:system/etc/enctune.conf \
     vendor/lge/g2mv/proprietary/system/etc/firmware/BCM4334B0_002.001.013.1675.1765_RC.hcd:system/etc/firmware/BCM4334B0_002.001.013.1675.1765_RC.hcd \
     vendor/lge/g2mv/proprietary/system/etc/firmware/fw_bcmdhd.bin:system/etc/firmware/fw_bcmdhd.bin \
     vendor/lge/g2mv/proprietary/system/etc/firmware/fw_bcmdhd_apsta.bin:system/etc/firmware/fw_bcmdhd_apsta.bin \
