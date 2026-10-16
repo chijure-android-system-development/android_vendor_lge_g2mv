@@ -153,6 +153,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g2mv/proprietary/system/lib/libnvwsi.so:system/lib/libnvwsi.so \
     vendor/lge/g2mv/proprietary/system/lib/libopencv24_tegra.so:system/lib/libopencv24_tegra.so \
     vendor/lge/g2mv/proprietary/system/lib/libpowerservice.so:system/lib/libpowerservice.so \
+    vendor/lge/g2mv/proprietary/system/lib/libgov_combinator.so:system/lib/libgov_combinator.so \
+    vendor/lge/g2mv/proprietary/system/lib/libgov_cores.so:system/lib/libgov_cores.so \
+    vendor/lge/g2mv/proprietary/system/lib/libgov_cpufs.so:system/lib/libgov_cpufs.so \
+    vendor/lge/g2mv/proprietary/system/lib/libgov_gpufs.so:system/lib/libgov_gpufs.so \
+    vendor/lge/g2mv/proprietary/system/lib/libgov_tbc.so:system/lib/libgov_tbc.so \
+    vendor/lge/g2mv/proprietary/system/lib/libpowerservice_client.so:system/lib/libpowerservice_client.so \
+    vendor/lge/g2mv/proprietary/system/etc/power.g2mv.rc:system/etc/power.g2mv.rc \
     vendor/lge/g2mv/proprietary/system/lib/librctransport.so:system/lib/librctransport.so \
     vendor/lge/g2mv/proprietary/system/lib/libril.so:system/lib/libril.so \
     vendor/lge/g2mv/proprietary/system/lib/libril-icera-lge.so:system/lib/libril-icera-lge.so \
